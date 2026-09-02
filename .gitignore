@@ -5,26 +5,96 @@ node_modules/
 dist/
 build/
 out/
+public/
 
-# IDE
+# IDE & Editor
 .idea/
 .vscode/
 *.swp
 *.swo
 *~
+*.sublime-workspace
+*.sublime-project
 
 # OS
 .DS_Store
 Thumbs.db
+Desktop.ini
+filelist.csv
+._*
 
 # Environment files
 .env
 .env.local
 .env.*.local
+.env.development
+.env.production
 
 # Logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log
+pnpm-debug.log*
 
-# Cookies
-*.cookie
+# Testing
+coverage/
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+__tests__/
+jest.config.*
+karma.conf.*
+
+# TypeScript
+*.tsbuildinfo
+*.d.ts
+
+# Vue.js
+*.vue
+dist/
+
+# React Native
+*.mobile
+*.sim
+
+# Security
+*.pem
+*.pub
+.env.secret
+secrets/
+keys/
+
+# Performance
+.performance-tracker
+
+# Local
+local/
+tmp/
+temp/
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+
+# Deployment
+firebase-debug.log
+.CircleCI/
+.netlify/
+.vercel/
+
+# Optional: Node.js lockfile (uncomment if you don't want to commit)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Optional: OS generated files
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
