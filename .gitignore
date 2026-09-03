@@ -86,8 +86,8 @@ firebase-debug.log
 .netlify/
 .vercel/
 
-# Optional: Node.js lockfile (uncomment if you don't want to commit)
-# package-lock.json
+# Optional: Node.js lockfile
+package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
 
