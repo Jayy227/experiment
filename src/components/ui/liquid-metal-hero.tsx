@@ -1,9 +1,11 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { motion } from "framer-motion";
+import { ShaderMount } from "@paper-design/shaders-react";
+import { liquidMetalFragmentShader } from "@paper-design/shaders";
 
 interface LiquidMetalHeroProps {
   badge?: string;
@@ -55,8 +57,10 @@ export default function LiquidMetalHero({
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Placeholder for liquid metal background - using gradient fallback */}
-      <div className="fixed inset-0 z-[-10] bg-gradient-to-br from-primary/20 via-purple-500/10 to-secondary/20" />
+      <ShaderMount
+        fragmentShader={liquidMetalFragmentShader}
+        style={{ position: "fixed", inset: 0, zIndex: -10 }}
+      />
       
       <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
         <motion.div 
