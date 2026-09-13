@@ -62,3 +62,5 @@ Open a PR on the main repository. Include a description of your changes.
 # Questions or Issues?
 
 Open an issue with the "bug" or "enhancement" label.
+
+Follow me
